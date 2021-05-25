@@ -1,0 +1,314 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body{
+font-family: 'Poppins', sans-serif;
+
+}
+.navbar
+{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+}
+nav
+{
+  flex:1;
+  text-align: right;
+}
+nav ul
+{
+  display: inline-block;
+
+  list-style: none;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a
+{
+     text-decoration: none;
+     color: black;
+}
+.offer
+{
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  margin-top: 40px;
+  padding: 30px 0;
+}
+.col-1 .offer-image
+{
+  padding: 80px;
+
+}
+small{
+  color:#555;
+}
+.container
+{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 25px;
+}
+.row
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-1
+{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+ .col-1 img
+ {
+   max-width: 100%;
+   padding: 50px 0;
+ }
+
+ .col-1 p
+ {
+font-family: 'Raleway', sans-serif;
+}
+
+ .col-1 h1
+ {
+   font-size: 55px;
+   margin: 20px 0;
+ }
+
+ .btn
+ {
+   display: inline-block;
+   background-color: #ff523b;
+   color:#fff;
+   padding: 8px 30px;
+   margin: 30px 0;
+   border-radius: 30px;
+ }
+.btn:hover
+{
+  background-color: red;
+}
+ .header
+ {
+   background-color: #D9AFD9;
+   background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+ }
+
+
+ .categories
+ {
+   margin: 70px 0;
+ }
+ .col-3
+ {
+   flex-basis: 30%;
+   min-width: 250px;
+   margin-bottom: 30px;
+ }
+ .col-3 img
+ {
+   width: 100%;
+ }
+ .small-container
+ {
+   max-width: 1080px;
+   margin: auto;
+   padding:0 25px;
+ }
+ .col-4{
+   flex-basis: 22%;
+   padding: 10px;
+   min-width: 200px;
+   margin-bottom: 50px;
+   transition: transform 0.5s;
+ }
+
+
+ .col-4:hover
+ {
+   transform: translateY(5px);
+ }
+
+ .col-4 img
+ {
+   width: 100%;
+ }
+ .title
+ {
+   text-align: center;
+   margin: 0 auto 80px;
+   position: relative;
+   line-height: 60px;
+   color: #555;
+ }
+.title::after
+{
+  content:'';
+  background: #ff523b;
+  width:100px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+}
+h4
+{
+  font-weight: normal;
+  color:#555;
+}
+/*--------------------------testimonial-----------------------------*/
+.testimonial
+{
+  padding-top: 100px;
+}
+.testimonial .col-3
+{
+  text-align:center;
+  padding: 40px 10px;
+  box-shadow: 0 0 10px 10px rgba(255, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.testimonial .col-3 img
+{
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%
+}
+.testimonial .col-3 :hover{
+  transform: translateX(-10px);
+}
+/*----------------------brands--------------------*/
+.brands
+{
+  margin: 100px auto;
+}
+.col-5
+{
+  width: 160px;
+}
+.col-5 img
+{
+   width: 1005:auto;
+   cursor: pointer;
+   filter: grayscale(100%);
+}
+.col-5 img:hover
+{
+  filter: grayscale(0%);
+}
+.footer{
+  background-color: black;
+  color:#8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p{
+  color:#8a8a8a;
+}
+.footer h3
+{
+  color: white;
+  margin-bottom: 20px;
+}
+.foooter-col-1, .foooter-col-2, .foooter-col-3, .foooter-col-4
+{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.foooter-col-1
+{
+  flex-basis: 30%;
+}
+.foooter-col-2
+{
+  flex:1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.foooter-col-3, .foooter-col-4
+{
+  flex-basis: 12px;
+  text-align: center;
+
+}
+ul
+{
+  list-style: none;
+}
+.app-logo
+{
+  margin-top:20px;
+
+}
+.app-logo img{
+  width: 100px;
+}
+.copyright
+{
+  margin: 15px 0;
+  text-align: center;
+}
+
+.menu-icon
+{
+   width: 28px;
+   margin-left: 20px;
+   display: none;
+}
+
+
+@media only screen and (max-width:800px)  {
+
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow:hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li
+  {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+    nav ul li a{
+      color: white;
+    }
+    .menu-icon
+    {
+      display: block;
+    }
+
+}
+
+@media only screen and (max-width:600px)
+{
+    .row
+    {
+      text-align: center;
+    }
+    .col-1, .col-3, .col-4
+    {
+      flex-basis: 100%;
+    }
+}
